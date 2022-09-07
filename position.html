@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Position</title>
+
+	<!-- Static
+			Default postion
+			we can't change top,bottom,left,write properties
+
+		relative
+			we can adjust the element from its origninal postion
+			no other elements will occupy its place
+			original position will not lose it will stay as blank.
+
+		Absolute
+			its depended on the positioned parent element(Except static).
+			if the parent element is not positioned it will depend on body element.
+			the element will lose its original position.
+			the below element wil occuipy its position.
+
+		Fixed
+			the element will not change its postion.
+
+		Sticky
+			like fixed.
+			if we provide the top property.
+			we scroll down then we can see the sticky element at the top of the website.
+
+		float
+
+				 -->
+	<style type="text/css">
+		#container
+		{
+			height: 500px;
+			width: 500px;
+			outline: solid 2px black;
+			background-color: gray;
+			/*position: fixed;*/
+		}
+		#one 
+		{
+			height: 100px;
+			width: 100px;
+			background-color: red;
+			position: relative;
+		}
+		#two 
+		{
+			height: 100px;
+			width: 100px;
+			background-color: yellow;
+			position: absolute;
+			left: 110px;
+		}
+		#three 
+		{
+			height: 100px;
+			width: 100px;
+			background-color: green;
+			position: sticky;
+			top: 10px;
+		}
+		#four 
+		{
+			height: 100px;
+			width: 100px;
+			background-color: blue;
+		}
+		#five 
+		{
+			height: 100px;
+			width: 100px;
+			background-color: tomato;
+			position: absolute;
+			top: 0px;
+		}
+		#six 
+		{
+			height: 100px;
+			width: 100px;
+			background-color: orange;
+			position: sticky;
+			top: 10px;
+    		
+		}
+		#seven 
+		{
+			height: 100px;
+			width: 100px;
+			    background-color: aqua;
+			   position: fixed;
+    		top: 0px;
+    		left: 600px;
+
+		}
+		#eight 
+		{
+			height: 100px;
+			width: 100px;
+			    background-color: black;
+			  
+
+		}
+		#nine 
+		{
+			height: 100px;
+			width: 100px;
+			    background-color: gold;
+			  position: float;
+
+		}
+		
+
+		
+
+	</style>
+</head>
+<body>
+	<h1>This is related to Position</h1>
+<div id="container">
+	<div id="one">
+		
+	</div>
+	<div id="two">
+		
+	</div>
+	<div id="three">
+		
+	</div>
+	<div id="four">
+		
+	</div>
+	<div id="five">
+		
+	</div>
+	
+	
+</div>
+<div id="eight">
+		
+	</div>
+
+<div id="seven">
+	
+	</div>
+	<div id="six">
+		
+	</div>
+		
+<div id="text">
+	<p id="text2">
+		There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
+	</p><div id="nine">
+		
+	</div>
+	<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</p>
+</div>
+</body>
+</html>

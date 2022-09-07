@@ -1,0 +1,11 @@
+collapse
+inherit
+fixed
+nth child
+units
+collapse
+display block
+different doc types
+	stroage
+	mathml
+	minimum tags required
